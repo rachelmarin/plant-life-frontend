@@ -27,7 +27,8 @@ class Plant extends Component {
         return (
             <div>
                 <h1>{ this.state.plant.name }</h1>
-                <p>{ this.state.plant.content }</p>
+                {/* <img>{ this.state.plant.img_url }</img> */}
+                <p>{ this.state.plant.info }</p>
             </div>
         )
     }

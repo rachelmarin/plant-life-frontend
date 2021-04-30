@@ -8,7 +8,7 @@ class PlantForm extends Component {
 
     state = {
         name: "",
-        content: ""
+        info: ""
     }
     handleChange = e =>{
         const stateChangeObj = {
@@ -52,12 +52,12 @@ class PlantForm extends Component {
                     </div>
                     <br/>
                     <div>
-                        <label htmlfor="content">Content</label>
+                        <label htmlfor="info">info</label>
                     <br/>                    
                         <textarea 
-                        id="content" 
-                        name="content"
-                        value={ this.state.content }
+                        id="info" 
+                        name="info"
+                        value={ this.state.info }
                         onChange={this.handleChange}
                         />
                     </div>
