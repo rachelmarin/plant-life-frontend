@@ -5,11 +5,16 @@ const initialState = {
 
 const PlantsReducer = (state=initialState, action) => {
     switch(action.type) {
+        case"LOADING":
+            return {
+                ...state,
+                loading: true
+            }
         case "LOAD_PLANTS":
             return {
                 ...state,
                 loading: false,
-                plants: state.plants
+                plants: action.plants
             }
             case "ADD_PLANT":
                 return{
