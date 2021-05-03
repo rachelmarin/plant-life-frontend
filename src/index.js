@@ -6,11 +6,12 @@ import {applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import App from './App';
 
-import PlantsReducer from'./reducers/PlantsReducer';
+import plantsReducer from'./reducers/plantsReducer';
 
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore( PlantsReducer, applyMiddleware( thunk) )
+const store = createStore( plantsReducer, applyMiddleware( thunk ) )
+
 ReactDOM.render(
   <React.StrictMode>
   <Provider store={store} >
