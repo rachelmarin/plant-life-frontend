@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
 
-* {
+body {
   margin: 0;
+  width: 100%;
   font-family:  'Orelega One', cursive;
   color: #333;
+  background-color: #7fb98f;
+}
+
+.page-container {
+  width: 800px;
+  margin: 20px auto;
+  background-color: #e7faeb;
+  padding: 70px;
 }
 .navbar {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   max-width: 600px;
@@ -32,4 +41,21 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.plant-listing {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.plant-listing .plant-list-single {
+  padding: 30px 30px;
+  width: 200px;
+}
+
+.form {
+  margin-left: 50px;
+  padding: 20px 20px;
 }
