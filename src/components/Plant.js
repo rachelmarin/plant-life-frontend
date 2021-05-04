@@ -26,9 +26,16 @@ class Plant extends Component {
 
         return (
             <div>
-                <h1>{ this.state.plant.name }</h1>
-                {/* <img>{ this.state.plant.img_url }</img> */}
-                <p>{ this.state.plant.info }</p>
+                <h1>{ this.state.plant.title }</h1>
+                <p>{ this.state.plant.light}</p>
+                <p>{ this.state.plant.temp}</p>
+                <p>{ this.state.plant.water}</p>
+                <p>{ this.state.plant.soil}</p>
+                <p>{ this.state.plant.feed}</p>
+                <p>{ this.state.plant.tip}</p>
+                 <div>
+               <button> Add to My Plants </button>
+           </div>
             </div>
         )
     }
