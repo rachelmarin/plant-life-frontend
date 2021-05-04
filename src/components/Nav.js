@@ -10,7 +10,7 @@ class Nav extends Component {
                     <li><Link to="/"> Home </Link></li>
                     <li><Link to="/plants/new"> Add Plant </Link></li>
                     <li><Link to="/plants"> All Plants </Link></li>
-                    <li><Link to="/"> My Plants </Link></li>
+                    <li><Link to="/myplants"> My Plants </Link></li>
                 </ul>
             </nav>
         )
