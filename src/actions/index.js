@@ -48,18 +48,3 @@ export const fetchPlants = () => {
         })
     }
 }
-
-// export const updatePlant = (plant) => {
-//   return dispatch => {
-//     method: "UPDATE_PLANT",
-//     headers: "Accept": "application/json",
-//     "Content-Type": "application/json"
-//   },
-//     })
-//       .then(resp => resp.json())
-//       .then(plant => {
-//       dispatch({ type: "UPDATE_PLANT", plant })
-//       history.push("/plants")
-//     })
-  // }
-// }

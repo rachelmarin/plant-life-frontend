@@ -52,6 +52,7 @@ class PlantForm extends Component {
                         name="title"
                         value={ this.state.title } 
                         onChange={this.handleChange}
+                        required={true} 
 
                         />
                     </div>
@@ -64,6 +65,7 @@ class PlantForm extends Component {
                         name="light"
                         value={ this.state.light }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <br/>
@@ -75,6 +77,7 @@ class PlantForm extends Component {
                         name="temp"
                         value={ this.state.temp }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <br/>
@@ -87,6 +90,7 @@ class PlantForm extends Component {
                         name="water"
                         value={ this.state.water }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <br/>
@@ -98,6 +102,7 @@ class PlantForm extends Component {
                         name="soil"
                         value={ this.state.soil }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <br/>
@@ -110,6 +115,7 @@ class PlantForm extends Component {
                         name="feed"
                         value={ this.state.feed }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <br/>
@@ -121,6 +127,7 @@ class PlantForm extends Component {
                         name="tip"
                         value={ this.state.tip }
                         onChange={this.handleChange}
+                        required={true} 
                         />
                     </div>
                     <input className="myButton" type="submit" value="Add Plant" />    

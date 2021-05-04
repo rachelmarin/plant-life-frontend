@@ -27,7 +27,7 @@ class Plant extends Component {
         if(!this.state.plant) {
             return <div>Plant Not Found</div>
         }
-        const {id} = this.props;
+       
 
         return (
             <div>
@@ -38,13 +38,8 @@ class Plant extends Component {
                 <h3>Soil: </h3><p>{ this.state.plant.soil}</p>
                 <h3>Feeding:</h3><p> { this.state.plant.feed}</p>
                 <h3>Tips and Tricks: </h3><p>{ this.state.plant.tip}</p>
-                <button className="myButton"> Add to My Plants </button>
-                <br/> 
-                <br/> 
-                <button className="myButton"> Edit </button> 
-                <br/> 
-                <br/> 
-                <button className="myButton" onClick={() => this.props.deletePlant(id, this.props.history)}> Delete</button>
+               
+                <button className="myButton" onClick={() => this.props.deletePlant(this.state.plant.id, this.props.history)}> Delete</button>
                  
                  
                  

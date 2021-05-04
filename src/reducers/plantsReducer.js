@@ -24,14 +24,12 @@ const plantsReducer = (state=initialState, action) => {
                 }
        
             case "DELETE_PLANT":
+               
                  return {
                     ...state,
                      plants: state.plants.filter(plant => action.plant.id !== plant.id)   
         }
-//         case "UPDATE_PLANT":
-//             return {
-//                ...state,
-//                 plants: state.plants.filter(plant => action.plant.id !== plant.id)   
+//      
 //    }
         default:
              return state;
