@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 
-const PlantCard = ({ name, id }) => {
+const PlantCard = ({ title, id }) => {
 
     return (
-    <div>
-        <h4>Name: <Link to={'/plants/$(id)'}>{ name }</Link> </h4>
+    <div className='plant-list-single' >
+        <br/><br/>
+        <h4>Name: <Link to={'/plants/$(id)'}>{ title }</Link> </h4>
+        <button> Add to My Plants </button>
+        <br/>
      </div>
     )
 }
