@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { addPlant } from '../actions/Index';
+import { addPlant } from '../actions/index';
+
 
 let id = 0;
 
 class PlantForm extends Component {
 
     state = {
-        name: "",
-        info: ""
+        title: "",
+        light: "",
+        temp: "",
+        water: "",
+        soil: "",
+        feed: "",
+        tip: ""
     }
     handleChange = e =>{
         const stateChangeObj = {
@@ -26,42 +32,97 @@ class PlantForm extends Component {
            id: ++id
        }
     
-       this.props.addPlant(plant)
+       this.props.addPlant(plant, this.props.history)
 
-       this.props.history.push('/plants');
-   
     }
+
     
     render() {
         return (
-            <div>
+            <div className='form'>
                 <h3>{ this.props.header }</h3>
 
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <label htmlfor="name">Name</label>
+                        <label htmlFor="title">Name</label>
                     <br/>
                         <input 
                         type="text" 
-                        id="name" 
-                        name="name"
-                        value={ this.state.name } 
+                        id="title" 
+                        name="title"
+                        value={ this.state.title } 
                         onChange={this.handleChange}
 
                         />
                     </div>
                     <br/>
                     <div>
-                        <label htmlfor="info">info</label>
+                        <label htmlFor="light">Lighting </label>
                     <br/>                    
                         <textarea 
-                        id="info" 
-                        name="info"
-                        value={ this.state.info }
+                        id="light" 
+                        name="light"
+                        value={ this.state.light }
                         onChange={this.handleChange}
                         />
                     </div>
                     <br/>
+                    <div>
+                        <label htmlFor="temp">Tempature</label>
+                    <br/>                    
+                        <textarea 
+                        id="temp" 
+                        name="temp"
+                        value={ this.state.temp }
+                        onChange={this.handleChange}
+                        />
+                    </div>
+                    <br/>
+                    <br/>
+                    <div>
+                        <label htmlFor="water">Water</label>
+                    <br/>                    
+                        <textarea 
+                        id="water" 
+                        name="water"
+                        value={ this.state.water }
+                        onChange={this.handleChange}
+                        />
+                    </div>
+                    <br/>
+                    <div>
+                        <label htmlFor="soil">Soil</label>
+                    <br/>                    
+                        <textarea 
+                        id="soil" 
+                        name="soil"
+                        value={ this.state.soil }
+                        onChange={this.handleChange}
+                        />
+                    </div>
+                    <br/>
+                    <br/>
+                    <div>
+                        <label htmlFor="feed">Feeding</label>
+                    <br/>                    
+                        <textarea 
+                        id="feed" 
+                        name="feed"
+                        value={ this.state.feed }
+                        onChange={this.handleChange}
+                        />
+                    </div>
+                    <br/>
+                    <div>
+                        <label htmlFor="tip">Tips and Tricks)</label>
+                    <br/>                    
+                        <textarea 
+                        id="tip" 
+                        name="tip"
+                        value={ this.state.tip }
+                        onChange={this.handleChange}
+                        />
+                    </div>
                     <input type="submit" value="Add Plant" />    
                 </form>
             </div>
