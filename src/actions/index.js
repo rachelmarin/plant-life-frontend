@@ -28,5 +28,38 @@ export const fetchPlants = () => {
      })
     
     }
- 
   }
+
+  export const deletePlant = ( id, history ) => {
+    return dispatch => {
+
+        fetch(`http://localhost:3001/plants/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+        
+        })
+        .then(resp => resp.json())
+        .then(plant => {
+            dispatch({ type: "DELETE_PLANT", plant })
+            history.push("/plants")
+        })
+    }
+}
+
+// export const updatePlant = (plant) => {
+//   return dispatch => {
+//     method: "UPDATE_PLANT",
+//     headers: "Accept": "application/json",
+//     "Content-Type": "application/json"
+//   },
+//     })
+//       .then(resp => resp.json())
+//       .then(plant => {
+//       dispatch({ type: "UPDATE_PLANT", plant })
+//       history.push("/plants")
+//     })
+  // }
+// }

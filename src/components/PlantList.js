@@ -17,8 +17,8 @@ render() {
     return (
         <div className='plant-listing'>
             <h2>Plant List</h2>
-            
-            {plants}
+        
+           {plants}
            
         </div>
         )

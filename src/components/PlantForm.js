@@ -123,7 +123,7 @@ class PlantForm extends Component {
                         onChange={this.handleChange}
                         />
                     </div>
-                    <input type="submit" value="Add Plant" />    
+                    <input className="myButton" type="submit" value="Add Plant" />    
                 </form>
             </div>
         )
