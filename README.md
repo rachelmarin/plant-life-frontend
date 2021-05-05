@@ -1,4 +1,4 @@
-# plant-life-frontend
+# Plant-Life-frontend
 
 ## Getting Started with Create React App
 
