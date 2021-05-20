@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { addPlant } from '../actions/index';
 
 
-let id = 0;
-
 class PlantForm extends Component {
 
     state = {
@@ -16,7 +14,8 @@ class PlantForm extends Component {
         feed: "",
         tip: ""
     }
-    handleChange = e =>{
+
+    handleChange = (e) => {
         const stateChangeObj = {
             [e.target.name]: e.target.value
         }
@@ -27,20 +26,18 @@ class PlantForm extends Component {
     handleSubmit = e => {
        e.preventDefault();
        
-       let plant = {
-           ...this.state,
-           id: ++id
-       }
+     
     
-       this.props.addPlant(plant, this.props.history)
+       this.props.addPlant(this.state, this.props.history)
 
     }
 
     
     render() {
+        
         return (
             <div className='form'>
-                <h3>{ this.props.header }</h3>
+                
 
                 <form onSubmit={this.handleSubmit}>
                     <div>

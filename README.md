@@ -1,71 +1,35 @@
 # Plant-Life-frontend
+A place for you to keep track of plant care!
+         Here you can...
+         
+         .Add a plant and the care information.
+         
+         .Revisit the "All Plants" list to check on plant needs.
 
-## Getting Started with Create React App
+## Start up
+To use this application please clone this repository and open in your machine's text editor.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First cd into plant-backend in the terminal shell.
 
-## Available Scripts
+Next in your terminal shell type the following:
 
-In the project directory, you can run:
+"bundle install"
 
-### `yarn start`
+This will install neccessary gems to run the program.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For database migration please type the following into terminal shell:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+"rails db:migrate" 
 
 
-### `yarn build`
+To connect to a local host, please type the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+"rails s"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+When it has confirmed you are connected to a local host, open a new terminal and cd into plant-frontend than run yarn start in the terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You may now start your plant inventory!
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
 ## License
